@@ -1,0 +1,56 @@
+query SampleGitHubUser {
+  user(login: "leerob") {
+    name
+    email
+    company
+    bio
+    followers {
+      totalCount
+    }
+    following {
+      totalCount
+    }
+    pinnedItems(first: 3) {
+      nodes {
+        ... on Repository {
+          id
+          name
+          description
+          stargazerCount
+          primaryLanguage {
+            id
+            name
+          }
+        }
+      }
+    }
+    starredRepositories(first: 10) {
+      nodes {
+        ... on Repository {
+          id
+          name
+          description
+          stargazerCount
+          primaryLanguage {
+            id
+            name
+          }
+        }
+      }
+    }
+    topRepositories(orderBy: {field: CREATED_AT, direction: ASC}, first: 10) {
+      nodes {
+        ... on Repository {
+          id
+          name
+          description
+          stargazerCount
+          primaryLanguage {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+}
