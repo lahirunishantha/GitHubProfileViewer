@@ -4,6 +4,7 @@ query SampleGitHubUser {
     email
     company
     bio
+    avatarUrl
     followers {
       totalCount
     }

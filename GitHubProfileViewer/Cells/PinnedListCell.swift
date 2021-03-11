@@ -7,10 +7,14 @@
 
 import UIKit
 
-class PinnedListCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class PinnedListCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UserCell {
     
     private let cellId = "pinnedItemCell"
     private let headerId = "pinnedHeaderId"
+    private var repoList:Array<Repository>!
+    private var repoUser:RepoUser!
+    
+    let REPO_CELL_HEIGHT:CGFloat = 130
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,6 +23,21 @@ class PinnedListCell: UICollectionViewCell, UICollectionViewDataSource, UICollec
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func loadWithUser(user: User) {
+        if(user.pinnedRepos != nil){
+            self.repoList = user.pinnedRepos
+            var rUser = RepoUser()
+            rUser.bio = user.bio
+            rUser.avatarUrl = user.avatarUrl
+            self.repoUser = rUser
+            
+        } else {
+            self.repoList = Array()
+        }
+        
+        pinnedCollectionView.reloadData()
     }
     
     let pinnedCollectionView: UICollectionView = {
@@ -44,15 +63,17 @@ class PinnedListCell: UICollectionViewCell, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return self.repoList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PinnedItemCell
+        cell.repoView.loadWithRepository(repo: self.repoList[indexPath.row], repoUser: self.repoUser)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize.init(width: frame.width, height: 130)
+        CGSize.init(width: frame.width, height: REPO_CELL_HEIGHT)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

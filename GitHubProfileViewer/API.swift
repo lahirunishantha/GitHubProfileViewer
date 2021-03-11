@@ -15,6 +15,7 @@ public final class SampleGitHubUserQuery: GraphQLQuery {
         email
         company
         bio
+        avatarUrl
         followers {
           __typename
           totalCount
@@ -122,6 +123,7 @@ public final class SampleGitHubUserQuery: GraphQLQuery {
           GraphQLField("email", type: .nonNull(.scalar(String.self))),
           GraphQLField("company", type: .scalar(String.self)),
           GraphQLField("bio", type: .scalar(String.self)),
+          GraphQLField("avatarUrl", type: .nonNull(.scalar(String.self))),
           GraphQLField("followers", type: .nonNull(.object(Follower.selections))),
           GraphQLField("following", type: .nonNull(.object(Following.selections))),
           GraphQLField("pinnedItems", arguments: ["first": 3], type: .nonNull(.object(PinnedItem.selections))),
@@ -136,8 +138,8 @@ public final class SampleGitHubUserQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(name: String? = nil, email: String, company: String? = nil, bio: String? = nil, followers: Follower, following: Following, pinnedItems: PinnedItem, starredRepositories: StarredRepository, topRepositories: TopRepository) {
-        self.init(unsafeResultMap: ["__typename": "User", "name": name, "email": email, "company": company, "bio": bio, "followers": followers.resultMap, "following": following.resultMap, "pinnedItems": pinnedItems.resultMap, "starredRepositories": starredRepositories.resultMap, "topRepositories": topRepositories.resultMap])
+      public init(name: String? = nil, email: String, company: String? = nil, bio: String? = nil, avatarUrl: String, followers: Follower, following: Following, pinnedItems: PinnedItem, starredRepositories: StarredRepository, topRepositories: TopRepository) {
+        self.init(unsafeResultMap: ["__typename": "User", "name": name, "email": email, "company": company, "bio": bio, "avatarUrl": avatarUrl, "followers": followers.resultMap, "following": following.resultMap, "pinnedItems": pinnedItems.resultMap, "starredRepositories": starredRepositories.resultMap, "topRepositories": topRepositories.resultMap])
       }
 
       public var __typename: String {
@@ -186,6 +188,16 @@ public final class SampleGitHubUserQuery: GraphQLQuery {
         }
         set {
           resultMap.updateValue(newValue, forKey: "bio")
+        }
+      }
+
+      /// A URL pointing to the user's public avatar.
+      public var avatarUrl: String {
+        get {
+          return resultMap["avatarUrl"]! as! String
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "avatarUrl")
         }
       }
 

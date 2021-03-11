@@ -7,10 +7,13 @@
 
 import UIKit
 
-class StarredRepoListCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class StarredRepoListCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UserCell {
     
     private let cellId = "starredRepoItemCell"
     private let headerId = "starredRepoHeaderId"
+    
+    private var repoList:Array<Repository>!
+    private var repoUser:RepoUser!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,6 +23,22 @@ class StarredRepoListCell: UICollectionViewCell, UICollectionViewDataSource, UIC
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func loadWithUser(user: User) {
+        if(user.starredRepos != nil){
+            self.repoList = user.starredRepos
+            var rUser = RepoUser()
+            rUser.bio = user.bio
+            rUser.avatarUrl = user.avatarUrl
+            self.repoUser = rUser
+            
+        } else {
+            self.repoList = Array()
+        }
+        
+        starredRepoCollectionView.reloadData()
+    }
+    
     let container: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -32,7 +51,7 @@ class StarredRepoListCell: UICollectionViewCell, UICollectionViewDataSource, UIC
         return view
     }()
     
-    let topRepoCollectionView: UICollectionView = {
+    let starredRepoCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -46,22 +65,24 @@ class StarredRepoListCell: UICollectionViewCell, UICollectionViewDataSource, UIC
     func setupViews(){
         cellHeader.label.text = "Starred repositories"
         addSubview(cellHeader)
-        addSubview(topRepoCollectionView)
+        addSubview(starredRepoCollectionView)
         
-        topRepoCollectionView.dataSource = self
-        topRepoCollectionView.delegate = self
-        topRepoCollectionView.register(RepoItemCell.self, forCellWithReuseIdentifier: cellId)
+        starredRepoCollectionView.dataSource = self
+        starredRepoCollectionView.delegate = self
+        starredRepoCollectionView.register(RepoItemCell.self, forCellWithReuseIdentifier: cellId)
         
         cellHeader.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, center: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 30)
-        topRepoCollectionView.anchor(top: cellHeader.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, center: nil, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: 0, height: 0)
+        starredRepoCollectionView.anchor(top: cellHeader.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, center: nil, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: 0, height: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.repoList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! RepoItemCell
+        cell.repoView.loadWithRepository(repo: self.repoList[indexPath.row], repoUser: self.repoUser)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

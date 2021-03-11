@@ -16,13 +16,33 @@
 		FE36FD6425F53C4E007F30C1 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD6325F53C4E007F30C1 /* Apollo.swift */; };
 		FE36FD6525F53C4E007F30C1 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD6325F53C4E007F30C1 /* Apollo.swift */; };
 		FE36FD6625F53C4E007F30C1 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD6325F53C4E007F30C1 /* Apollo.swift */; };
-		FE36FD7225F54B28007F30C1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE36FD7125F54B28007F30C1 /* Alamofire */; };
 		FE36FD7825F5562B007F30C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD7725F5562B007F30C1 /* User.swift */; };
 		FE36FD7925F5562B007F30C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD7725F5562B007F30C1 /* User.swift */; };
 		FE36FD7A25F5562B007F30C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD7725F5562B007F30C1 /* User.swift */; };
 		FE36FD8225F556C2007F30C1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD8125F556C2007F30C1 /* Repository.swift */; };
 		FE36FD8325F556C2007F30C1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD8125F556C2007F30C1 /* Repository.swift */; };
 		FE36FD8425F556C2007F30C1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FD8125F556C2007F30C1 /* Repository.swift */; };
+		FE36FDA125F7F2E5007F30C1 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDA025F7F2E5007F30C1 /* UserDataService.swift */; };
+		FE36FDA225F7F2E5007F30C1 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDA025F7F2E5007F30C1 /* UserDataService.swift */; };
+		FE36FDA325F7F2E5007F30C1 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDA025F7F2E5007F30C1 /* UserDataService.swift */; };
+		FE36FDAC25F7F7A0007F30C1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDAB25F7F7A0007F30C1 /* UserPresenter.swift */; };
+		FE36FDAD25F7F7A0007F30C1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDAB25F7F7A0007F30C1 /* UserPresenter.swift */; };
+		FE36FDAE25F7F7A0007F30C1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDAB25F7F7A0007F30C1 /* UserPresenter.swift */; };
+		FE36FDDF25F9400B007F30C1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDDE25F9400B007F30C1 /* UserCell.swift */; };
+		FE36FDE025F9400B007F30C1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDDE25F9400B007F30C1 /* UserCell.swift */; };
+		FE36FDE125F9400B007F30C1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FDDE25F9400B007F30C1 /* UserCell.swift */; };
+		FE36FDEA25F9429B007F30C1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FE36FDE925F9429B007F30C1 /* Kingfisher */; };
+		FE36FDF325F94832007F30C1 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = FE36FDF225F94832007F30C1 /* MBProgressHUD */; };
+		FE36FE0525F95C29007F30C1 /* RepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE0425F95C29007F30C1 /* RepoProtocol.swift */; };
+		FE36FE0625F95C29007F30C1 /* RepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE0425F95C29007F30C1 /* RepoProtocol.swift */; };
+		FE36FE0725F95C29007F30C1 /* RepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE0425F95C29007F30C1 /* RepoProtocol.swift */; };
+		FE36FE1225F9E014007F30C1 /* UserCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE1125F9E014007F30C1 /* UserCacheService.swift */; };
+		FE36FE1325F9E014007F30C1 /* UserCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE1125F9E014007F30C1 /* UserCacheService.swift */; };
+		FE36FE1425F9E014007F30C1 /* UserCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE1125F9E014007F30C1 /* UserCacheService.swift */; };
+		FE36FE1A25F9E819007F30C1 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE1925F9E819007F30C1 /* AlertUtils.swift */; };
+		FE36FE1B25F9E819007F30C1 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE1925F9E819007F30C1 /* AlertUtils.swift */; };
+		FE36FE1C25F9E819007F30C1 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE1925F9E819007F30C1 /* AlertUtils.swift */; };
+		FE36FE2425F9F400007F30C1 /* UserCacheServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36FE2325F9F400007F30C1 /* UserCacheServiceTest.swift */; };
 		FE65135425F4B566004A4F94 /* PinnedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE65135325F4B566004A4F94 /* PinnedItemCell.swift */; };
 		FE65135925F4B5DB004A4F94 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE65135825F4B5DB004A4F94 /* SourceSansPro-SemiBold.ttf */; };
 		FE65135A25F4B5DB004A4F94 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE65135825F4B5DB004A4F94 /* SourceSansPro-SemiBold.ttf */; };
@@ -91,6 +111,13 @@
 		FE36FD6325F53C4E007F30C1 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		FE36FD7725F5562B007F30C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FE36FD8125F556C2007F30C1 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FE36FDA025F7F2E5007F30C1 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		FE36FDAB25F7F7A0007F30C1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		FE36FDDE25F9400B007F30C1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FE36FE0425F95C29007F30C1 /* RepoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoProtocol.swift; sourceTree = "<group>"; };
+		FE36FE1125F9E014007F30C1 /* UserCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheService.swift; sourceTree = "<group>"; };
+		FE36FE1925F9E819007F30C1 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		FE36FE2325F9F400007F30C1 /* UserCacheServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheServiceTest.swift; sourceTree = "<group>"; };
 		FE65135325F4B566004A4F94 /* PinnedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedItemCell.swift; sourceTree = "<group>"; };
 		FE65135825F4B5DB004A4F94 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		FE65136325F4B695004A4F94 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -125,8 +152,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE36FD7225F54B28007F30C1 /* Alamofire in Frameworks */,
+				FE36FDEA25F9429B007F30C1 /* Kingfisher in Frameworks */,
 				FE6513AC25F51B2C004A4F94 /* Apollo in Frameworks */,
+				FE36FDF325F94832007F30C1 /* MBProgressHUD in Frameworks */,
 				FE6513AE25F51B2C004A4F94 /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +183,40 @@
 				FE36FD8125F556C2007F30C1 /* Repository.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FE36FD9F25F7F2BE007F30C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FE36FDA025F7F2E5007F30C1 /* UserDataService.swift */,
+				FE36FE1125F9E014007F30C1 /* UserCacheService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FE36FDAA25F7F74C007F30C1 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FE36FDAB25F7F7A0007F30C1 /* UserPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FE36FDDD25F93FD4007F30C1 /* CommonProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE36FDDE25F9400B007F30C1 /* UserCell.swift */,
+				FE36FE0425F95C29007F30C1 /* RepoProtocol.swift */,
+			);
+			path = CommonProtocols;
+			sourceTree = "<group>";
+		};
+		FE36FE1825F9E7F3007F30C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE36FE1925F9E819007F30C1 /* AlertUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FE65136225F4B681004A4F94 /* Constants */ = {
@@ -207,6 +269,10 @@
 		FEC8166C25F3F70300ADD6A6 /* GitHubProfileViewer */ = {
 			isa = PBXGroup;
 			children = (
+				FE36FE1825F9E7F3007F30C1 /* Utils */,
+				FE36FDDD25F93FD4007F30C1 /* CommonProtocols */,
+				FE36FDAA25F7F74C007F30C1 /* Presenters */,
+				FE36FD9F25F7F2BE007F30C1 /* Services */,
 				FE36FD7625F55605007F30C1 /* Models */,
 				FE6513BC25F52EC9004A4F94 /* GraphQL */,
 				FE65138B25F4ED26004A4F94 /* ViewComponents */,
@@ -230,6 +296,7 @@
 			children = (
 				FEC8168425F3F70400ADD6A6 /* GitHubProfileViewerTests.swift */,
 				FEC8168625F3F70400ADD6A6 /* Info.plist */,
+				FE36FE2325F9F400007F30C1 /* UserCacheServiceTest.swift */,
 			);
 			path = GitHubProfileViewerTests;
 			sourceTree = "<group>";
@@ -294,7 +361,8 @@
 			packageProductDependencies = (
 				FE6513AB25F51B2C004A4F94 /* Apollo */,
 				FE6513AD25F51B2C004A4F94 /* ApolloWebSocket */,
-				FE36FD7125F54B28007F30C1 /* Alamofire */,
+				FE36FDE925F9429B007F30C1 /* Kingfisher */,
+				FE36FDF225F94832007F30C1 /* MBProgressHUD */,
 			);
 			productName = GitHubProfileViewer;
 			productReference = FEC8166A25F3F70300ADD6A6 /* GitHubProfileViewer.app */;
@@ -369,7 +437,8 @@
 			mainGroup = FEC8166125F3F70300ADD6A6;
 			packageReferences = (
 				FE6513AA25F51B2C004A4F94 /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				FE36FD7025F54B28007F30C1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FE36FDE825F9429B007F30C1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FE36FDF125F94832007F30C1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = FEC8166B25F3F70300ADD6A6 /* Products */;
 			projectDirPath = "";
@@ -450,20 +519,26 @@
 				FE65139725F4EDA7004A4F94 /* StarredRepoListCell.swift in Sources */,
 				FE65137725F4CE6A004A4F94 /* TopRepoListCell.swift in Sources */,
 				FE65137E25F4CECE004A4F94 /* SectionHeader.swift in Sources */,
+				FE36FDA125F7F2E5007F30C1 /* UserDataService.swift in Sources */,
+				FE36FE1225F9E014007F30C1 /* UserCacheService.swift in Sources */,
 				FE36FD5A25F53BAC007F30C1 /* API.swift in Sources */,
 				FE65139E25F4EF31004A4F94 /* RepoView.swift in Sources */,
 				FEC816A525F4008600ADD6A6 /* ProfileHeaderCell.swift in Sources */,
 				FE36FD7825F5562B007F30C1 /* User.swift in Sources */,
+				FE36FE0525F95C29007F30C1 /* RepoProtocol.swift in Sources */,
 				FEC816AE25F4045A00ADD6A6 /* UIView+Extensions.swift in Sources */,
 				FEC816B625F4A56C00ADD6A6 /* PinnedListCell.swift in Sources */,
 				FEC8166E25F3F70300ADD6A6 /* AppDelegate.swift in Sources */,
 				FE65138D25F4ED3E004A4F94 /* HeaderView.swift in Sources */,
+				FE36FDAC25F7F7A0007F30C1 /* UserPresenter.swift in Sources */,
 				FE65135425F4B566004A4F94 /* PinnedItemCell.swift in Sources */,
 				FE65138525F4D105004A4F94 /* RepoItemCell.swift in Sources */,
 				FEC8167025F3F70300ADD6A6 /* SceneDelegate.swift in Sources */,
 				FE36FD6425F53C4E007F30C1 /* Apollo.swift in Sources */,
+				FE36FE1A25F9E819007F30C1 /* AlertUtils.swift in Sources */,
 				FE65136425F4B695004A4F94 /* Constants.swift in Sources */,
 				FE36FD8225F556C2007F30C1 /* Repository.swift in Sources */,
+				FE36FDDF25F9400B007F30C1 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,17 +547,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE65139825F4EDA7004A4F94 /* StarredRepoListCell.swift in Sources */,
+				FE36FDA225F7F2E5007F30C1 /* UserDataService.swift in Sources */,
 				FE65137F25F4CECE004A4F94 /* SectionHeader.swift in Sources */,
+				FE36FDAD25F7F7A0007F30C1 /* UserPresenter.swift in Sources */,
 				FE65138E25F4ED3E004A4F94 /* HeaderView.swift in Sources */,
 				FE65138625F4D106004A4F94 /* RepoItemCell.swift in Sources */,
 				FE36FD6525F53C4E007F30C1 /* Apollo.swift in Sources */,
 				FEC8168525F3F70400ADD6A6 /* GitHubProfileViewerTests.swift in Sources */,
+				FE36FDE025F9400B007F30C1 /* UserCell.swift in Sources */,
 				FE65137825F4CE6A004A4F94 /* TopRepoListCell.swift in Sources */,
 				FE65139F25F4EF31004A4F94 /* RepoView.swift in Sources */,
 				FE36FD5B25F53BAC007F30C1 /* API.swift in Sources */,
+				FE36FE2425F9F400007F30C1 /* UserCacheServiceTest.swift in Sources */,
 				FE65136525F4B695004A4F94 /* Constants.swift in Sources */,
 				FE36FD7925F5562B007F30C1 /* User.swift in Sources */,
+				FE36FE1B25F9E819007F30C1 /* AlertUtils.swift in Sources */,
+				FE36FE1325F9E014007F30C1 /* UserCacheService.swift in Sources */,
 				FE36FD8325F556C2007F30C1 /* Repository.swift in Sources */,
+				FE36FE0625F95C29007F30C1 /* RepoProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,17 +573,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE65139925F4EDA7004A4F94 /* StarredRepoListCell.swift in Sources */,
+				FE36FDA325F7F2E5007F30C1 /* UserDataService.swift in Sources */,
 				FE65138025F4CECE004A4F94 /* SectionHeader.swift in Sources */,
+				FE36FDAE25F7F7A0007F30C1 /* UserPresenter.swift in Sources */,
 				FE65138F25F4ED3E004A4F94 /* HeaderView.swift in Sources */,
 				FE65138725F4D106004A4F94 /* RepoItemCell.swift in Sources */,
 				FE36FD6625F53C4E007F30C1 /* Apollo.swift in Sources */,
 				FEC8169025F3F70400ADD6A6 /* GitHubProfileViewerUITests.swift in Sources */,
+				FE36FDE125F9400B007F30C1 /* UserCell.swift in Sources */,
 				FE65137925F4CE6A004A4F94 /* TopRepoListCell.swift in Sources */,
 				FE6513A025F4EF31004A4F94 /* RepoView.swift in Sources */,
 				FE36FD5C25F53BAC007F30C1 /* API.swift in Sources */,
 				FE65136625F4B695004A4F94 /* Constants.swift in Sources */,
 				FE36FD7A25F5562B007F30C1 /* User.swift in Sources */,
+				FE36FE1C25F9E819007F30C1 /* AlertUtils.swift in Sources */,
+				FE36FE1425F9E014007F30C1 /* UserCacheService.swift in Sources */,
 				FE36FD8425F556C2007F30C1 /* Repository.swift in Sources */,
+				FE36FE0725F95C29007F30C1 /* RepoProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ582BC2U4;
 				INFOPLIST_FILE = GitHubProfileViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,6 +764,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ582BC2U4;
 				INFOPLIST_FILE = GitHubProfileViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -812,12 +902,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FE36FD7025F54B28007F30C1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		FE36FDE825F9429B007F30C1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
+				minimumVersion = 6.2.1;
+			};
+		};
+		FE36FDF125F94832007F30C1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
 			};
 		};
 		FE6513AA25F51B2C004A4F94 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
@@ -825,16 +923,21 @@
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.42.0;
+				minimumVersion = 0.34.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FE36FD7125F54B28007F30C1 /* Alamofire */ = {
+		FE36FDE925F9429B007F30C1 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FE36FD7025F54B28007F30C1 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = FE36FDE825F9429B007F30C1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FE36FDF225F94832007F30C1 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE36FDF125F94832007F30C1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
 		};
 		FE6513AB25F51B2C004A4F94 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;

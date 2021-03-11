@@ -8,7 +8,9 @@
 import UIKit
 
 class PinnedItemCell: UICollectionViewCell {
+    
     let profileWidthHeight:CGFloat = 32
+    let repoView = RepoView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,8 +20,6 @@ class PinnedItemCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    let repoView = RepoView()
     
     func setupViews(){
         addSubview(repoView)

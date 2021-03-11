@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Repository: NSObject {
+struct Repository: Codable {
     var id:String!
     var name:String!
     var desc:String!
